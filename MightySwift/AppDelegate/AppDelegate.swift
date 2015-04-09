@@ -31,32 +31,67 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return ctrl
         }()
 
+    lazy var usersController: UsersController = {
+        var ctrl = UsersController()
+        ctrl.title = "Users"
+        return ctrl
+        }()
+
+    lazy var menuController: MenuController = {
+        var ctrl = MenuController()
+        ctrl.title = "Menu"
+        return ctrl
+        }()
+
     lazy var homeNavigation: UINavigationController = {
         var ctrl = UINavigationController()
         ctrl.title = "Home"
+        ctrl.tabBarItem.image = UIImage(named: "feeds")
         return ctrl
         }()
 
     lazy var betsNavigation: UINavigationController = {
         var ctrl = UINavigationController()
         ctrl.title = "Bets"
+        ctrl.tabBarItem.image = UIImage(named: "bets")
         return ctrl
         }()
 
     lazy var leadersNavigation: UINavigationController = {
         var ctrl = UINavigationController()
         ctrl.title = "Leaders"
+        ctrl.tabBarItem.image = UIImage(named: "leaders")
         return ctrl
         }()
 
-    var mainTabBar        = UITabBarController()
+    lazy var usersNavigation: UINavigationController = {
+        var ctrl = UINavigationController()
+        ctrl.title = "Users"
+        ctrl.tabBarItem.image = UIImage(named: "users")
+        return ctrl
+        }()
+
+    lazy var menuNavigation: UINavigationController = {
+        var ctrl = UINavigationController()
+        ctrl.title = "Menu"
+        ctrl.tabBarItem.image = UIImage(named: "menu")
+        return ctrl
+        }()
+
+    lazy var mainTabBar: UITabBarController = {
+        var ctrl = UITabBarController()
+        ctrl.tabBar.tintColor = Colors.colorThemeOrange();
+        return ctrl
+    }()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         homeNavigation.viewControllers    = [homeController]
         betsNavigation.viewControllers    = [betsController]
         leadersNavigation.viewControllers = [leadersController]
+        usersNavigation.viewControllers = [usersController]
+        menuNavigation.viewControllers = [menuController]
 
-        mainTabBar.viewControllers = [homeNavigation, betsNavigation, leadersNavigation]
+        mainTabBar.viewControllers = [homeNavigation, betsNavigation, leadersNavigation, usersNavigation, menuNavigation]
 
         window.frame = UIScreen.mainScreen().bounds
         window.rootViewController = mainTabBar

@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36F55ED7DB3AF817DB994013 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A54A7D70D7B729B0F1325C /* libPods.a */; };
+		843E2B7919FB3C90A5CBE79B /* libPods-MightySwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095F0059E370A7D2B6CAE7F /* libPods-MightySwift.a */; };
 		C69B39331AD5463C00817B1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69B39321AD5463C00817B1E /* AppDelegate.swift */; };
 		C69B39351AD5463C00817B1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69B39341AD5463C00817B1E /* ViewController.swift */; };
 		C69B39381AD5463C00817B1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69B39361AD5463C00817B1E /* Main.storyboard */; };
 		C69B393A1AD5463C00817B1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69B39391AD5463C00817B1E /* Images.xcassets */; };
 		C69B393D1AD5463C00817B1E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69B393B1AD5463C00817B1E /* LaunchScreen.xib */; };
 		C69B39491AD5463C00817B1E /* MightySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69B39481AD5463C00817B1E /* MightySwiftTests.swift */; };
+		C69B39531AD5477900817B1E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C69B39521AD5477900817B1E /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2513C19B4E852189F63C0977 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		72053884B3AE7088F16A5BD0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8095F0059E370A7D2B6CAE7F /* libPods-MightySwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MightySwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69B392D1AD5463C00817B1E /* MightySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MightySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69B39311AD5463C00817B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C69B39321AD5463C00817B1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		C69B39421AD5463C00817B1E /* MightySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MightySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69B39471AD5463C00817B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C69B39481AD5463C00817B1E /* MightySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MightySwiftTests.swift; sourceTree = "<group>"; };
+		C69B39521AD5477900817B1E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F2A54A7D70D7B729B0F1325C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F55ED7DB3AF817DB994013 /* libPods.a in Frameworks */,
+				843E2B7919FB3C90A5CBE79B /* libPods-MightySwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +66,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		266F3729359724D5C2B284AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72053884B3AE7088F16A5BD0 /* Pods.debug.xcconfig */,
+				2513C19B4E852189F63C0977 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C69B39241AD5463C00817B1E = {
 			isa = PBXGroup;
 			children = (
+				C69B39521AD5477900817B1E /* Podfile */,
 				C69B392F1AD5463C00817B1E /* MightySwift */,
 				C69B39451AD5463C00817B1E /* MightySwiftTests */,
 				C69B392E1AD5463C00817B1E /* Products */,
+				266F3729359724D5C2B284AE /* Pods */,
+				F4F47B80D92302A2F2DF44F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +134,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F4F47B80D92302A2F2DF44F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2A54A7D70D7B729B0F1325C /* libPods.a */,
+				8095F0059E370A7D2B6CAE7F /* libPods-MightySwift.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C69B394C1AD5463C00817B1E /* Build configuration list for PBXNativeTarget "MightySwift" */;
 			buildPhases = (
+				D5D18471FE1B49EE7F71226F /* Check Pods Manifest.lock */,
 				C69B39291AD5463C00817B1E /* Sources */,
 				C69B392A1AD5463C00817B1E /* Frameworks */,
 				C69B392B1AD5463C00817B1E /* Resources */,
+				DF739D1ACE3C6BCFF8E496AD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +227,7 @@
 			files = (
 				C69B39381AD5463C00817B1E /* Main.storyboard in Resources */,
 				C69B393D1AD5463C00817B1E /* LaunchScreen.xib in Resources */,
+				C69B39531AD5477900817B1E /* Podfile in Resources */,
 				C69B393A1AD5463C00817B1E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +240,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D5D18471FE1B49EE7F71226F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF739D1ACE3C6BCFF8E496AD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MightySwift/Pods-MightySwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C69B39291AD5463C00817B1E /* Sources */ = {
@@ -334,6 +401,7 @@
 		};
 		C69B394D1AD5463C00817B1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72053884B3AE7088F16A5BD0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MightySwift/Info.plist;
@@ -344,6 +412,7 @@
 		};
 		C69B394E1AD5463C00817B1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2513C19B4E852189F63C0977 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MightySwift/Info.plist;
@@ -405,6 +474,7 @@
 				C69B394E1AD5463C00817B1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C69B394F1AD5463C00817B1E /* Build configuration list for PBXNativeTarget "MightySwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +483,7 @@
 				C69B39511AD5463C00817B1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

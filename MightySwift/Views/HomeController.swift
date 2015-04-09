@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeController.swift
 //  MightySwift
 //
 //  Created by Rodel Medina on 4/8/15.
@@ -8,15 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeController: TemplateController {
     
     lazy var button: UIButton = {
         var button: UIButton = UIButton.buttonWithType(UIButtonType.System) as UIButton;
-
-        print(self.whatever());
-
         button.frame = CGRectMake(100, 100, 100, 50)
-        button.backgroundColor = UIColor.greenColor()
+        button.backgroundColor = UIColor.redColor()
         button.setTitle("Test Button", forState: UIControlState.Normal)
         button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         
@@ -26,17 +23,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(button)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        
-        
-    }
-
-    func whatever () -> String {
-        return "nice one!";
     }
 }
 

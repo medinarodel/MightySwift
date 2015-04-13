@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window            = UIWindow()
+    var window: UIWindow?
 
     lazy var homeController: HomeController = {
         var ctrl = HomeController()
@@ -80,7 +80,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     lazy var mainTabBar: UITabBarController = {
         var ctrl = UITabBarController()
-        ctrl.tabBar.tintColor = Colors.colorThemeOrange();
+        ctrl.tabBar.tintColor = Constants.Colors.colorThemeOrange;
         return ctrl
     }()
 
@@ -88,14 +88,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         homeNavigation.viewControllers    = [homeController]
         betsNavigation.viewControllers    = [betsController]
         leadersNavigation.viewControllers = [leadersController]
-        usersNavigation.viewControllers = [usersController]
-        menuNavigation.viewControllers = [menuController]
+        usersNavigation.viewControllers   = [usersController]
+        menuNavigation.viewControllers    = [menuController]
 
         mainTabBar.viewControllers = [homeNavigation, betsNavigation, leadersNavigation, usersNavigation, menuNavigation]
 
-        window.frame = UIScreen.mainScreen().bounds
-        window.rootViewController = mainTabBar
-        window.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+
+        if let window = window {
+            window.rootViewController = mainTabBar
+            window.makeKeyAndVisible()
+        }
+
         return true
     }
 

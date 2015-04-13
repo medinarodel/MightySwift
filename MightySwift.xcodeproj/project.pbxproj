@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		36F55ED7DB3AF817DB994013 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A54A7D70D7B729B0F1325C /* libPods.a */; };
 		843E2B7919FB3C90A5CBE79B /* libPods-MightySwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8095F0059E370A7D2B6CAE7F /* libPods-MightySwift.a */; };
+		C644B8B11ADBC9E70075EAF2 /* APIConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644B8B01ADBC9E70075EAF2 /* APIConnect.swift */; };
+		C66327481ADC1E3700C86C48 /* sample in Resources */ = {isa = PBXBuildFile; fileRef = C66327471ADC1E3600C86C48 /* sample */; };
 		C69B393A1AD5463C00817B1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69B39391AD5463C00817B1E /* Images.xcassets */; };
 		C69B393D1AD5463C00817B1E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C69B393B1AD5463C00817B1E /* LaunchScreen.xib */; };
 		C69B39491AD5463C00817B1E /* MightySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69B39481AD5463C00817B1E /* MightySwiftTests.swift */; };
@@ -18,6 +20,7 @@
 		C69C69531AD6C5270081A090 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69C69501AD6C5270081A090 /* HomeController.swift */; };
 		C69C69541AD6C5270081A090 /* LeadersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69C69511AD6C5270081A090 /* LeadersController.swift */; };
 		C69C69561AD6C57A0081A090 /* TemplateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69C69551AD6C57A0081A090 /* TemplateController.swift */; };
+		C6B18B161ADBEC6400200A15 /* RGBConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B18B151ADBEC6400200A15 /* RGBConverter.swift */; };
 		C6CDC0A51AD6E024005D72F5 /* bets.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CDC0A01AD6E024005D72F5 /* bets.png */; };
 		C6CDC0A61AD6E024005D72F5 /* feeds.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CDC0A11AD6E024005D72F5 /* feeds.png */; };
 		C6CDC0A71AD6E024005D72F5 /* leaders.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CDC0A21AD6E024005D72F5 /* leaders.png */; };
@@ -42,6 +45,8 @@
 		2513C19B4E852189F63C0977 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		72053884B3AE7088F16A5BD0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8095F0059E370A7D2B6CAE7F /* libPods-MightySwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MightySwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C644B8B01ADBC9E70075EAF2 /* APIConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConnect.swift; sourceTree = "<group>"; };
+		C66327471ADC1E3600C86C48 /* sample */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sample; sourceTree = "<group>"; };
 		C69B392D1AD5463C00817B1E /* MightySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MightySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69B39311AD5463C00817B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C69B39391AD5463C00817B1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 		C69C69501AD6C5270081A090 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		C69C69511AD6C5270081A090 /* LeadersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadersController.swift; sourceTree = "<group>"; };
 		C69C69551AD6C57A0081A090 /* TemplateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateController.swift; sourceTree = "<group>"; };
+		C6B18B151ADBEC6400200A15 /* RGBConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBConverter.swift; sourceTree = "<group>"; };
 		C6CDC0A01AD6E024005D72F5 /* bets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bets.png; sourceTree = "<group>"; };
 		C6CDC0A11AD6E024005D72F5 /* feeds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeds.png; sourceTree = "<group>"; };
 		C6CDC0A21AD6E024005D72F5 /* leaders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaders.png; sourceTree = "<group>"; };
@@ -187,6 +193,7 @@
 		C6CDC09F1AD6E024005D72F5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C66327471ADC1E3600C86C48 /* sample */,
 				C6CDC0A01AD6E024005D72F5 /* bets.png */,
 				C6CDC0A11AD6E024005D72F5 /* feeds.png */,
 				C6CDC0A21AD6E024005D72F5 /* leaders.png */,
@@ -200,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				C6CDC0AF1AD6E275005D72F5 /* Constants.swift */,
+				C644B8B01ADBC9E70075EAF2 /* APIConnect.swift */,
+				C6B18B151ADBEC6400200A15 /* RGBConverter.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -302,6 +311,7 @@
 				C6CDC0A81AD6E024005D72F5 /* menu.png in Resources */,
 				C6CDC0A71AD6E024005D72F5 /* leaders.png in Resources */,
 				C6CDC0A91AD6E024005D72F5 /* users.png in Resources */,
+				C66327481ADC1E3700C86C48 /* sample in Resources */,
 				C69B393A1AD5463C00817B1E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,11 +365,13 @@
 			files = (
 				C69C69481AD6B76A0081A090 /* AppDelegate.swift in Sources */,
 				C69C69521AD6C5270081A090 /* BetsController.swift in Sources */,
+				C644B8B11ADBC9E70075EAF2 /* APIConnect.swift in Sources */,
 				C6CDC0AD1AD6E114005D72F5 /* MenuController.swift in Sources */,
 				C69C69541AD6C5270081A090 /* LeadersController.swift in Sources */,
 				C69C69531AD6C5270081A090 /* HomeController.swift in Sources */,
 				C6CDC0AB1AD6E109005D72F5 /* UsersController.swift in Sources */,
 				C69C69561AD6C57A0081A090 /* TemplateController.swift in Sources */,
+				C6B18B161ADBEC6400200A15 /* RGBConverter.swift in Sources */,
 				C6CDC0B01AD6E275005D72F5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

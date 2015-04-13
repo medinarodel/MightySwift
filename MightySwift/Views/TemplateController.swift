@@ -12,13 +12,13 @@ class TemplateController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /* UI */
-        self.view.backgroundColor = Colors.colorThemeMainBG();
-//
-        self.navigationController!.navigationBar.translucent = false;
-        self.navigationController!.navigationBarHidden = false;
-        self.navigationController!.navigationBar.barTintColor = Colors.colorThemeNavigation();
-        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Colors.colorThemeLightGray()]
+
+        self.view.backgroundColor = Constants.Colors.colorThemeMainBG
+
+        self.navigationController!.navigationBar.translucent = false
+        self.navigationController!.navigationBarHidden = false
+        self.navigationController!.navigationBar.barTintColor = Constants.Colors.colorThemeNavigation
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Constants.Colors.colorThemeLightGray]
     }
 }
 

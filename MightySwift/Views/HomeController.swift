@@ -8,28 +8,40 @@
 
 import UIKit
 
-class HomeController: TemplateController {
+class HomeController: TemplateController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
-    var clicks = 0
-    lazy var button: UIButton = {
-        var button: UIButton = UIButton.buttonWithType(UIButtonType.System) as UIButton;
-        button.frame = CGRectMake(100, 100, 100, 50)
-        button.backgroundColor = UIColor.greenColor()
-        button.setTitle("Test Button", forState: UIControlState.Normal)
-        button.addTarget(self, action: "buttonAction", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        return button;
-        }()
+    var collectionView: UICollectionView?
+    var items: [String] = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addSubview(button)
+        
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSizeMake(Constants.Sizes.homeThumb, Constants.Sizes.homeThumb)
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+
+        collectionView = UICollectionView(frame: CGRectMake(0, 0, Constants.Sizes.windowWidth, Constants.Sizes.contentHeight), collectionViewLayout: layout)
+        collectionView!.dataSource = self
+        collectionView!.delegate = self
+        collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        collectionView!.backgroundColor = UIColor.whiteColor()
+        self.view.addSubview(collectionView!)
+
     }
     
-    func buttonAction() {
-        clicks++
-        println(clicks)
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
     }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! UICollectionViewCell
 
+        var bgImage = UIImageView(image: UIImage(named: "sample/" + items[indexPath.row]))
+        bgImage.frame = CGRectMake(0,0,Constants.Sizes.homeThumb,Constants.Sizes.homeThumb)
+        cell.addSubview(bgImage)
+        cell.backgroundColor = Constants.Colors.colorThemeOrange;
+        return cell
+    }
+    
 }
-
